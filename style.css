@@ -441,13 +441,9 @@ a:active {
 	cursor: pointer;
 }
 
-.main-small-navigation ul {
-	display: none;
-}
-
 @media screen and (max-width: 600px) {
 	.menu-toggle,
-	.main-small-navigation ul.nav-menu.toggled-on {
+	.navigation-main.toggled-on .nav-menu {
 		display: block;
 	}
 
@@ -455,6 +451,7 @@ a:active {
 		display: none;
 	}
 }
+
 
 /* =Content
 ----------------------------------------------- */
@@ -464,7 +461,8 @@ a:active {
 .hentry {
 	margin: 0 0 1.5em;
 }
-.byline {
+.byline,
+.updated {
 	display: none;
 }
 .single .byline,
@@ -581,7 +579,7 @@ object {
 }
 
 /* Search widget */
-.widget_search .submit {
+.widget_search .search-submit {
 	display: none;
 }
 
